@@ -16,10 +16,10 @@ class App extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My App'),
+          title: Text('Home Screen'),
         ),
         body: Center(
-          child: Text('Hello World'),
+          child: Text('Profile Screen'),
         ),
       ),
     );
