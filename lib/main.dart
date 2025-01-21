@@ -26,11 +26,19 @@ class App extends StatelessWidget {
   }
 }
 
-class HomeScreen` extends StatelessWidget {
-  const HomeScreen`({super.key});
+//TODO:HOME SCREEN Added
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home Screen'),
+      ),
+      body: Center(
+        child: Text('Home Screen'),
+      ),
+    );
   }
 }
