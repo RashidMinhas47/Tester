@@ -16,7 +16,10 @@ class App extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Home Screen'),
+          title: GestureDetector(
+              onTap: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => HomeScreen())),
+              child: Text('Home Screen')),
         ),
         body: Center(
           child: Text('Profile Screen'),
