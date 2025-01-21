@@ -1,3 +1,4 @@
+import 'package:flow_of_github/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,7 +23,10 @@ class App extends StatelessWidget {
               child: Text('Home Screen')),
         ),
         body: Center(
-          child: Text('Profile Screen'),
+          child: GestureDetector(
+              onTap: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ProfileScreen())),
+              child: Text('Profile Screen')),
         ),
       ),
     );
@@ -46,18 +50,4 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Profile Screen'),
-      ),
-      body: Center(
-        child: Text('Profile Screen'),
-      ),
-    );
-  }
-}
