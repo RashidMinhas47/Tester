@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CustomTheme {
+class AppTheme {
   static ThemeData blueishTheme() {
     return ThemeData(
       brightness: Brightness.light,
