@@ -1,3 +1,4 @@
+import 'package:flow_of_github/screens/home_screen.dart';
 import 'package:flow_of_github/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -32,22 +33,3 @@ class App extends StatelessWidget {
     );
   }
 }
-
-//TODO:HOME SCREEN Added
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home Screen'),
-      ),
-      body: Center(
-        child: Text('Home Screen'),
-      ),
-    );
-  }
-}
-
-
