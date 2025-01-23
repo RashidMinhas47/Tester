@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CustomTheme {
   static ThemeData blueishTheme() {
     return ThemeData(
-      brightness: Brightness.light,
+      brightness: ColorScheme.fromSwatch().brightness,
       primaryColor: Colors.lightBlue,
       colorScheme:
           ColorScheme.fromSwatch().copyWith(secondary: Colors.lightBlueAccent),
@@ -22,16 +22,16 @@ class CustomTheme {
 
   static ThemeData black48Theme() {
     return ThemeData(
-      brightness: Brightness.dark,
-      primaryColor: Colors.black,
+      brightness: ColorScheme.fromSwatch().brightness,
+      primaryColor: const Color.fromARGB(255, 185, 167, 167),
       colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.black54),
       scaffoldBackgroundColor: Colors.black,
       appBarTheme: AppBarTheme(
-        color: Colors.black,
+        color: const Color.fromARGB(255, 187, 150, 150),
         iconTheme: IconThemeData(color: Colors.white),
       ),
       buttonTheme: ButtonThemeData(
-        buttonColor: Colors.black54,
+        buttonColor: const Color.fromARGB(137, 99, 95, 95),
         textTheme: ButtonTextTheme.primary,
       ),
       // Add more black48 theme properties here

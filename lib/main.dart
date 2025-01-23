@@ -1,4 +1,5 @@
 import 'package:flow_of_github/screens/home_screen.dart';
+import 'package:flow_of_github/utils/themes/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,9 +13,9 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: CustomTheme.blueishTheme(),
+      darkTheme: CustomTheme.black48Theme(),
+      themeMode: ThemeMode.system,
       home: Scaffold(
         appBar: AppBar(
           title: GestureDetector(
