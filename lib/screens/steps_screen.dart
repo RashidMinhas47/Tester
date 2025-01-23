@@ -12,7 +12,6 @@ class StepsScreen extends StatelessWidget {
       body: Column(
         children: [
           Text('Steps Counter is here'),
-
         ],
       ),
     );
