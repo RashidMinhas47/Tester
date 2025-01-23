@@ -1,5 +1,4 @@
 import 'package:flow_of_github/screens/home_screen.dart';
-import 'package:flow_of_github/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
